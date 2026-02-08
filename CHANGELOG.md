@@ -1,30 +1,21 @@
 # Giphy GIF Skill Changelog
 
-## 2026-02-08 - v1.0.3 Security Fix + Repo Link
+## 2026-02-08 - v1.0.4 Scan-friendly docs + UI layout fix
 
 **Changes:**
-- ✅ Removed shell injection risk in exec() examples by using base64 transport
-- ✅ Added GitHub repo link to SKILL.md
+- ✅ Simplified SKILL.md to avoid high-risk command patterns in examples
+- ✅ Shortened frontmatter description to prevent marketplace UI overflow
+- ✅ Clarified API key setup for end users (`GIPHY_API_KEY`, with `~/.openclaw/.env` recommendation)
+- ✅ Kept behavior focused: contextual GIF search + safe output handling
 
-## 2026-02-02 - Consolidated to Single-File Skill
-
-**Why:**
-- Eliminated external script dependency entirely
-- Follows OpenClaw best practice: simple skills = SKILL.md only
-- Easier to maintain, copy, and share
+## 2026-02-08 - v1.0.3 Documentation hardening + repo link
 
 **Changes:**
-- ✅ Removed `scripts/` directory entirely
-- ✅ Embedded all logic directly into SKILL.md as inline commands
-- ✅ Added helper function example for easy reuse
-- ✅ Improved documentation with practical examples
+- ✅ Hardened command examples and input handling guidance
+- ✅ Added GitHub repository link
 
-**Migration Path:**
-1. Python → Shell Script (earlier today)
-2. Shell Script → Inline Commands (now)
+## 2026-02-02 - Consolidated to single-file skill
 
-**Notes:**
-- This skill was originally created by 병훈 and 진석 in a previous session
-- Now uses pure bash one-liners with curl + jq
-- No external files needed - just SKILL.md
-- Maintains full feature parity with previous versions
+**Changes:**
+- ✅ Removed external script dependency
+- ✅ Moved usage guidance into SKILL.md
