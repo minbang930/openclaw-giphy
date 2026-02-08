@@ -10,7 +10,8 @@ Find a relevant GIF from Giphy and send it naturally in Discord.
 ## Behavior Rules
 
 - Send GIFs when explicitly requested.
-- Use sparingly for reactions (celebration, humor, strong emotion).
+- Also allow proactive GIFs (without explicit request) when the moment clearly fits: celebration, shared humor, or strong emotional beats.
+- Keep proactive usage occasional (at most one GIF for a moment, avoid back-to-back GIF-only replies).
 - Prefer text-only in serious or information-dense conversation.
 - Keep results safe-for-work (`rating=g`).
 
